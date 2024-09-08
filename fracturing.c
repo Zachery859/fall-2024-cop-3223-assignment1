@@ -20,22 +20,6 @@ int main(int argc, char **argv)
 return 1;
 }
 
-//Made to avoid overusing of scanf() for x and y points
-void enterPoints(int *x1, int *x2, int *y1, int *y2) 
-{
-
-    // Gets user inputs for x and y values for points
-    scanf("%d", x1);  
-    scanf("%d", x2);
-    scanf("%d", y1);
-    scanf("%d", y2);
-
-    // Tells user what they inputed
-    printf("Point #1 entered: x1 = %d; y1 = %d\n", *x1, *y1);
-    printf("Point #2 entered: x2 = %d; y2 = %d\n", *x2, *y2);
-    
-}
-
 double calculateWidth()
 {
     int x1; 
@@ -45,7 +29,15 @@ double calculateWidth()
 
     int width = 0;
     
-    enterPoints(&x1, &x2, &y1, &y2);
+    // Gets user inputs for x and y values for points
+    scanf("%d", &x1);  
+    scanf("%d", &x2);
+    scanf("%d", &y1);
+    scanf("%d", &y2);
+
+    // Tells user what they inputed
+    printf("Point #1 entered: x1 = %d; y1 = %d\n", x1, y1);
+    printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
 
     width = x2 - x1;
 
@@ -62,7 +54,15 @@ double calculateHeight()
     int y2;
     int height = 0;
 
-    enterPoints(&x1, &x2, &y1, &y2);
+    // Gets user inputs for x and y values for points
+    scanf("%d", &x1);  
+    scanf("%d", &x2);
+    scanf("%d", &y1);
+    scanf("%d", &y2);
+
+    // Tells user what they inputed
+    printf("Point #1 entered: x1 = %d; y1 = %d\n", x1, y1);
+    printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
 
     height = y2 - y1;
 
@@ -79,7 +79,16 @@ double calculateDistance()
     int y1;
     int y2;
 
-    enterPoints(&x1,&x2,&y1,&y2);
+    // Gets user inputs for x and y values for points
+    scanf("%d", &x1);  
+    scanf("%d", &x2);
+    scanf("%d", &y1);
+    scanf("%d", &y2);
+
+    // Tells user what they inputed
+    printf("Point #1 entered: x1 = %d; y1 = %d\n", x1, y1);
+    printf("Point #2 entered: x2 = %d; y2 = %d\n", x2, y2);
+
     // Gets the diameter
     double distance = sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1))); 
 
