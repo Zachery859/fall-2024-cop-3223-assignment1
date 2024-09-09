@@ -54,6 +54,7 @@
         int x2;
         int y1;
         int y2;
+
         int height = 0;
 
         // Gets user inputs for x and y values for points
@@ -103,7 +104,7 @@
     double calculatePerimeter() 
     {
         // Gets the circumference/perimeter of the city
-        double Perimeter = PI*calculateDistance();
+        double Perimeter = PI * calculateDistance();
 
         printf("The perimeter of the city encompassed by your request is %f\n", Perimeter);
 
@@ -115,7 +116,7 @@
         double area = 0; // Defines area 
 
         // Gets the area of the city
-        area = PI * calculateDistance() * calculateDistance()/ 4;
+        area = PI * calculateDistance() * calculateDistance() / 4;
 
         printf("The area of the city encompassed by your request is %f\n", area);
 
